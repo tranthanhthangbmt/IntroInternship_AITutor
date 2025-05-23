@@ -4,7 +4,7 @@ import os
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
-from langchain.embeddings import GoogleGenerativeAIEmbeddings
+from langchain_community.embeddings import GoogleGenerativeAIEmbeddings
 from langchain.chat_models import ChatGoogleGenerativeAI
 from langchain.chains import RetrievalQA
 
