@@ -15,7 +15,7 @@ st.title("💡 RAG với Gemini API")
 
 @st.cache_resource
 def load_chain():
-    loader = TextLoader("Data/data.txt")
+    loader = TextLoader("data/data.txt")
     docs = loader.load()
     splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     chunks = splitter.split_documents(docs)
