@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import GoogleGenerativeAIEmbeddings
